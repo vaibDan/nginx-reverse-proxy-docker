@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend Service</title>
+</head>
+<body>
+    <h1>Welcome to the Backend Service</h1>
+    <p>This is the backend page.</p>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+<style>
+    body {
+        background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+        font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        color: #22223b;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        color: #3a5a98;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(58,90,152,0.08);
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #4a4e69;
+        margin-bottom: 2em;
+    }
+
+    body > * {
+        z-index: 1;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: url('https://www.transparenttextures.com/patterns/cubes.png');
+        opacity: 0.08;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+</style>
